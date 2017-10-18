@@ -1,0 +1,207 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+
+$gutter: 12px;
+
+.container{
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+}
+.row{
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+  >.col,
+  >[class*=col-]{
+    padding-right: $gutter/2;
+    padding-left: $gutter/2;
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    >.col,
+    >[class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.btn{
+	color: #FFFFFF;
+	// font-family: "Graphik";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+  &.btn-black{
+    background-color: #404040;
+    border-color: #404040;
+    padding: 15px 28px;
+    border-radius: 8px;
+    &:hover{
+      background-color: #606060;
+      border-color: #606060;
+    }
+  }
+  i{
+    margin-right: 10px;
+  }
+}
+
+nav.navbar{
+  margin-bottom: 100px;
+  padding: 37px 0 0;
+  background: transparent;
+  a.navbar-brand{
+    font-weight: 600;
+  }
+  ul.navbar-nav{
+    width: 100%;
+    li.nav-item{
+      a{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color:#404040;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        &.search-btn{
+          display: inline-block;
+          box-sizing: border-box;
+          height: 42px;
+          width: 42px;
+          border: 2px solid #D8D8D8;
+          border-radius:50%;
+          text-align: center;
+          i{
+            color: #5B5B5B;
+            font-size: 20px;
+          }
+        }
+        &.profile-comment{
+          display: inline-block;
+          box-sizing: border-box;
+          position: relative;
+          padding: 0 0 0 20px;
+          &:before,&:after{
+            position: absolute;
+            content: '';
+            display: block;
+          }
+          &:before{
+            width: 18px;
+            height: 18px;
+            border-radius:50%;
+            background: #F54748;
+            top: -5px;
+            right: -10px;
+            box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.27);
+          }
+          &:after{
+            width: 0;
+            height: 0;
+            border-width: 3px 6px;
+            border-color:transparent;
+            border-style:solid;
+            border-right-color: #F54748;
+            top: 10px;
+            right: 4px;
+            transform:rotate(-40deg);
+          }
+          img{
+            border-radius:50%;
+          }
+        }
+        span.point{
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: #75B56F;
+          border-radius:50%;
+          position: absolute;
+          right: -3px;
+          top: 3px;
+        }
+      }
+    }
+  }
+}
+
+header.header{
+  padding-bottom: 70px;
+  background-color: rgba(#D5D5D5, .29);
+  .sub-header-layer{
+    h2{
+    	color: #404040;
+    	// font-family: Graphik;
+      font-weight: 700;
+    	font-size: 52px;
+    	line-height: 61px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+content.main-content{
+  padding: 36px 0;
+  .card-layer{
+    h4.title-layer{
+      // color: #404040;
+      // font-family: Graphik;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    p.sub-title{
+      color: #5D5D5D;
+      // font-family: Graphik;
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
+    button.btn{
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 9px;
+      padding: 12px 18px;
+      color: #5D5D5D;
+      // font-family: Graphik;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 15px;
+      i{
+        color: #5D5D5D;
+      }
+    }
+    .card-inner{
+      padding: 33px 0;
+      .card{
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        box-shadow: 4px 2px 8px 0 rgba(0,0,0,0.06), 0 2px 4px 0 rgba(0,0,0,0.09);
+        margin-bottom: 16px;
+        border:0;
+        .img-wrap{
+          img{
+            max-width:100%;
+            border-radius: 6px 0 0 6px;
+          }
+        }
+        .card-txt{
+          padding: 10px 14px;
+          h4{
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 5px;
+          }
+          p{
+            color: #5D5D5D;
+            font-family: "Source Sans Pro";
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
