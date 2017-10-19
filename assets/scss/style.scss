@@ -28,7 +28,7 @@ $gutter: 12px;
 
 .btn{
 	color: #FFFFFF;
-	// font-family: "Graphik";
+	font-family: 'Graphik Web';
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1;
@@ -52,7 +52,10 @@ nav.navbar{
   padding: 37px 0 0;
   background: transparent;
   a.navbar-brand{
-    font-weight: 600;
+    font-family: "Source Sans Pro";
+  	font-size: 24px;
+    font-weight: bold;
+    line-height: 31px;
   }
   ul.navbar-nav{
     width: 100%;
@@ -133,7 +136,7 @@ header.header{
   .sub-header-layer{
     h2{
     	color: #404040;
-    	// font-family: Graphik;
+    	// font-family: 'Graphik Web';
       font-weight: 700;
     	font-size: 52px;
     	line-height: 61px;
@@ -147,13 +150,14 @@ content.main-content{
   .card-layer{
     h4.title-layer{
       // color: #404040;
-      // font-family: Graphik;
+      // font-family: 'Graphik Web';
       font-size: 24px;
       line-height: 26px;
+      font-weight: 600;
     }
     p.sub-title{
       color: #5D5D5D;
-      // font-family: Graphik;
+      // font-family: 'Graphik Web';
       font-size: 16px;
       line-height: 18px;
       margin-bottom: 0;
@@ -163,7 +167,7 @@ content.main-content{
       border-radius: 9px;
       padding: 12px 18px;
       color: #5D5D5D;
-      // font-family: Graphik;
+      // font-family: 'Graphik Web';
       font-size: 14px;
       font-weight: 500;
       line-height: 15px;
@@ -192,6 +196,7 @@ content.main-content{
             font-size: 16px;
             line-height: 20px;
             margin-bottom: 5px;
+            font-weight: 600;
           }
           p{
             color: #5D5D5D;
